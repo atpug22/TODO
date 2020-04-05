@@ -17,11 +17,16 @@ function removeEverything(){
 }
 function removeItem(){
         li = ul.children;
+        var count = 0;
         for (let index = 0; index < li.length; index++) {
             while(li[index]&&li[index].children[0].checked){
                 ul.removeChild(li[index]);
+                count++;
             }
             
+        }
+        if(count==0){
+            alert("Select a task to remove."); 
         }
 }
 function addItem(){
@@ -47,5 +52,6 @@ function addItem(){
         },1);
         document.querySelector('.demo').innerHTML='';
     }
+    input = "";   //Ye bol rha tha mai chutiye
     
 }
