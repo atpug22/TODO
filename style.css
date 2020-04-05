@@ -79,7 +79,7 @@ body{
 #container .controls #input:focus{
     outline: 0;
 }
-#container .controls button{
+button{
     width: 200px;
     margin-bottom: 10px;
 }
